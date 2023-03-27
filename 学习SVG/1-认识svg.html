@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg</title>
+</head>
+<body>
+  <svg>
+    <!-- 圆形 -->
+    <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red"></circle>
+  </svg>
+  <br>
+  <!-- 指定局域大小 填充方式 -->
+  <svg
+    baseProfile="full"
+    width="300"
+    height="200">
+    <rect width="100%" height="100%" stroke="red" stroke-width="4" fill="yellow"></rect>
+
+    <circle cx="150" cy="100" r="80" fill="green"></circle>
+
+    <text x="150" y="115" font-size="16" text-anchor="middle" fill="white">Runnoob svg test</text>
+  </svg>
+
+  <!-- 引入 -->
+  <!-- 使用object标签引入 -->
+  <object height="30" width="30" data="/icons/1001tracklists.svg" type="image/svg+xml"></object>
+  <!-- 使用embed引入 -->
+  <embed src="/icons/1001tracklists.svg" width="20" height="20">
+  <iframe src="icons/1001tracklists.svg" width="10" height="10" frameborder="0"></iframe>
+
+</body>
+</html>
